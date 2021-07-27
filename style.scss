@@ -6,7 +6,35 @@ body {
   text-align: center;
   font-family: 'Merienda', cursive;
 }
+button{
+  margin: 4px;
+}
 section {
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  border: solid;
+  border-color: #31343a;
+  border-radius: 5px;
+  width: 500px;
+  background: #31343a;
+  color: white;
+}
+p{
+  margin-top: 20px;
+}
+#display-choice {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  border: solid;
+  border-color: #31343a;
+  border-radius: 5px;
+  width: 600px;
+  background: #31343a;
+  color: white;
 }
