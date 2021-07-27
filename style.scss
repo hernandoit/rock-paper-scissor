@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 
 body {
-  background-image: url("./img/rps.png");
+  background-image: url("./img/rps.jpg");
   color: black;
   text-align: center;
   font-family: 'Merienda', cursive;
-  background-size: 700px 700px;  
+}
+section {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }

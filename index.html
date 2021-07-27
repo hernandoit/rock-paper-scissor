@@ -2,16 +2,20 @@
 <html>
     <head>
         <title>Tic Tac Toe</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
               <link rel="stylesheet" href="style.scss">
     </head>
 <body>
+    <section>
     <h1>Lapis, Papyrus, Scalpellus</h1>
     <p>The classic game of rock, paper, scissors!</p>
+    </section>
     <div id="player-choice">
         <label>Make your choice:</label>
-        <button class="choice-buttons" id="lapis">Lapis</button>
-        <button class="choice-buttons" id="papyrus">Papyrus</button>
-        <button class="choice-buttons" id="scalpellus">Scalpellus</button>
+        <button class="choice-buttons btn btn-dark" id="lapis">Lapis</button>
+        <button class="choice-buttons btn btn-dark" id="papyrus">Papyrus</button>
+        <button class="choice-buttons btn btn-dark" id="scalpellus">Scalpellus</button>
     </div>
     <div id="display-choice"></div>
 </body>
