@@ -9,7 +9,7 @@ const computer = {
 	name: 'computer',
 }
 // choices array
-const choices = ['lapis', 'papyrus', 'scalpellus']
+const choices = ['rock', 'paper', 'scissor']
 // function to randomly choose computers choice from the choices array
 function computerChooses() {
 	const randomIndex = Math.floor(Math.random() * choices.length)
@@ -17,6 +17,7 @@ function computerChooses() {
 }
 // conditional statements to compare computers choice against players choice
 function compareChoices() {
+	// maybe a winning array to handle requests
 	const results = document.getElementById('display-choice')
 	if (computer.choice === player.choice) {
 		results.innerText =
@@ -77,6 +78,7 @@ function compareChoices() {
 }
 // function to run computers choice and conditional statements to determine the winner and puts it on the HTML '#display-choice' div.
 function displayResults() {
+
 	computerChooses()
 	compareChoices()
 }
@@ -86,6 +88,6 @@ function btnChoice(e) {
 	displayResults()
 }
 // event listening on the click event and running the function setting the players choice to the button
-document.querySelector('#lapis').addEventListener('click', btnChoice)
-document.querySelector('#papyrus').addEventListener('click', btnChoice)
-document.querySelector('#scalpellus').addEventListener('click', btnChoice)
+document.querySelector('#rock').addEventListener('click', btnChoice)
+document.querySelector('#paper').addEventListener('click', btnChoice)
+document.querySelector('#scissor').addEventListener('click', btnChoice)
