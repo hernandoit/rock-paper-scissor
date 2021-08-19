@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rock, Paper, Scissor</title>
     <!-- CSS -->
-<link href="./assets/css/bootstrap.min.css" rel="stylesheet">
-<link href="./assets/css/cover.css" rel="stylesheet">
+<link href="./assets/css/cover.scss" rel="stylesheet">
   </head>
 
   <body class="d-flex h-100 text-center text-white bg-dark">
@@ -14,16 +13,28 @@
 
   <header class="mb-auto"></header>
 
-  <main class="mb-auto">
+  <div class="mdc-touch-target-wrapper">
     <h1>Rock, Paper, Scissor</h1>
     <p class="lead">Make your choice:</p>
-    <p class="lead">
-      <a class="btn btn-lg btn-info fw-bold" id="rock">Rock</a>
-      <a class="btn btn-lg btn-info fw-bold" id="paper">Paper</a>
-      <a class="btn btn-lg btn-info fw-bold" id="scissor">Scissor</a>
-    </p>
+    <div class="mdc-touch-target-wrapper">
+      <button class="mdc-button mdc-button--raised">
+        <span class="mdc-button__ripple"></span>
+        <span class="mdc-button__touch"></span>
+        <span class="mdc-button__label" id="rock">Rock</span>
+      </button>
+      <button class="mdc-button mdc-button--touch">
+        <span class="mdc-button__ripple"></span>
+        <span class="mdc-button__touch"></span>
+        <span class="mdc-button__label" id="paper">Paper</span>
+      </button>
+      <button class="mdc-button mdc-button--touch">
+        <span class="mdc-button__ripple"></span>
+        <span class="mdc-button__touch"></span>
+        <span class="mdc-button__label" id="scissor">Scissor</span>
+      </button>
+    </div>
         <div id="display-choice"></div>
-  </main>
+  </div>
 
 </div>
   </body>
